@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2? family = Spartan & display = swap'); 
+@import url('https://fonts.googleapis.com/css2? family = Sacramento & display = swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+    background: white;
+    height: 400vh;
+    width: 100%;
+}
+
+/*---------------------------header-----------------------------*/
+
+h1 {
+
+padding-top: 10vh;
+
+}
+
+#baco {
+        color:#5b2545;
+        font-family: 'Spartan', sans-serif;     
+        font-size: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        animation-name: aparecer;
+        animation-duration: 4s;
+
+}
+
+#art {
+
+        color: #5b2545;
+        font-style: italic;
+        font-weight: normal;
+        font-family: 'Sacramento', cursive;
+        font-size: 20px;
+        text-align: center;
+        text-transform: capitalize;
+        animation-name: aparecer;
+        animation-duration: 6s;
+
+}
+
+@keyframes aparecer {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+
+/*-------------------------fin-header---------------------------*/
+/*--------------------------menu nav----------------------------*/
+#nav {
+    height: 1.5625em;
+
+}
+
+.navMenu { 
+    font-size: 81%;
+    color: #e46474;
+
+}
+
+
+.subMenu{
+	text-decoration: none;
+    color: rgb(255, 88, 105);
+
+}
+
+.sub {
+		font-size: 15;
+
+}
+
+.navMenu a {
+    color:#cbac8b;
+    /*text-shadow: 0px 0px 10px #fff;*/
+}
+
+
+.navMenu a:hover {
+    color:#a93e6a;
+}
+
+
+.navMenu a:ficus {
+    color:#a93e6a;
+}
+
+
+
+/*----------------------fin menu nav----------------------------*/
+/*------------------------section-------------------------------*/
+
+#section {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+#somos {
+    height: 110vh;
+    display:grid;
+    grid-template-columns: 45% 55%;
+    justify-items: center;
+    align-items: center;
+}
+
+#textoSomos{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+#imagenSomos{
+    border: 8px solid #b4dcac;
+    animation-name: aparecer;
+    animation-duration: 3s;
+
+    /*border-image: linear-gradient(to top,#b4dcac,#cbac8b,#e46474);*/
+
+}
+
+h2 {
+    font-size: 25px;
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    font-style: normal;
+    color: #e46474;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    animation-name: aparecer;
+    animation-duration: 7s;
+}
+
+
+p {
+   font-size: 16px;
+   font-family: arial;
+   font-weight: normal;
+   font-style: normal;
+   color: #cbac8b;
+   letter-spacing: 1px;
+    animation-name: aparecer;
+    animation-duration: 9s;
+}
+
+
+#redes{
+    background-color: #b4dcac;
+    height: 30vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    font-style: none;
+}
+
+#redes :hover {
+-webkit-animation: 1s chicle 1;
+}
+
+@-webkit-keyframes chicle{
+    30%{
+        -webkit-transform: 
+            scaleX(1.25)
+            scaleY(0.75);
+    }
+    50%{
+        -webkit-transform: 
+            scaleX(0.75)
+            scaleY(1.25);
+    }
+    60%{
+        -webkit-transform: 
+            scaleX(1.15)
+            scaleY(0.85);
+    }
+}
+
+#crono {
+
+    height: 120vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+
+}
+
+h3 {
+    color:  #a93e6a;
+    font-size: 18px;
+    font-family: cursive;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+
+}
+
+.listasCrono {
+        
+        display: inline-block;
+        overflow: auto;
+        align-self: start;
+        border: solid 3px  #a93e6a; 
+        width: 400px;
+        height: 80px;
+        transition: all 2s; 
+   
+}
+
+
+
+.listasCrono :hover {
+   height: 100px;
+   padding: 20px;
+
+}
+
+.verde {
+     background-color: #b4dcac;
+     color: white;
+     font-size: 15px;
+     font-family: calabri;
+}
+
+.amarillo {
+     background-color: #cbac8b;
+     color: white;
+     font-size: 15px;
+     font-family: calabri;
+}
+
+.rosa {
+     background-color: #e46474;
+     color: white;
+     font-size: 15px;
+     font-family: calabri;
+}
+
+
+#subir {
+
+    background-color:  #e46474;
+    border:none;
+    box-shadow: 1px 1px 1px 1px lightgray ;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 8px 50px;
+    border-radius: 50px;
+    margin: 2px 1px;
+    display:flex;
+    display:  inline-block; 
+
+
+} /*boton de subir home*/
+
+#botonSubir {
+    height: 20vh;
+    align-self: end;
+    margin-left: 45%;
+
+}
+
+#botonSubir :hover {
+    background-color: #b4dcac;
+    box-shadow: 1px 1px 1px 1px grey;
+    font-weight: bold;
+    transform: scale(2.1);
+
+} /*boton de subir home*/
+
+
+/*----------------------fin-section-----------------------------*/
+/*-----------------------footer---------------------------------*/
+
+#footer {
+    margin-top: 60vh;
+    height: 40vh;
+    background-color:#5b2545;
+    color: white;
+    font-style: normal;
+    font-family: arial;
+    display:grid;
+    grid-template-columns: 35% 65%;
+
+}
+
+#menuFoo1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 7%;
+    padding-bottom: 3%;
+    font-size: 12px;
+
+}
+
+#redesFoo {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 2px;
+}
+
+#menuFoo2 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    justify-items: center;
+    justify-content:center;
+    padding-bottom: 15vh;
+    padding-right: 5%;
+
+
+
+}
+
+.tituloFoo {
+    letter-spacing: 2px;
+    font-style: normal; 
+    font-family: arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.textoFoo {
+    letter-spacing: 2px;
+    font-style: normal; 
+    font-family: arial;
+    font-weight: normal;
+    font-size: 13px;
+    text-transform:uppercase; 
+    text-decoration: none;
+    color: white;
+   
+}
+
+.color :hover{
+    color: #b4dcac;
+}  
+
+
+.cajaFoo{
+    color: #7A005B;
+    border-radius: 20px;
+}
+
+.cajaFoo:focus {
+   transform: scale(1.0);
+   font-size: 16px;
+   font-weight: bold;
+
+}
+
+
+
+#botonFoo {
+    background-color: #a93e6a;
+    box-shadow:1px 1px #472426;
+    border: none;
+    color: white;
+    padding: 4px 55px;
+    font-size: 15px;
+    margin: 2px 1px;
+    border-radius: 50px;
+
+}
+
+.scale :hover{
+
+    font-weight: bold;
+    transform: scale(1.0);
+}
+
+
+/*-----------------------fin-footer-------------------------------*/
+
+/*------------------------novedades-------------------------------*/
+
+.sectionNov {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    grid-row-gap: 1px;
+
+}
+
+.h2nov {
+    padding-top: 15vh;
+}
+
+.derecha {
+    padding-right: 10%;
+}
+
+
+/*------------------------novedades-------------------------------*/
+
+/*-------------------------eventos--------------------------------*/
+
+
+
+
+
+
+/*------------------------eventos--------------------------------*/
+
+/*---------------------------grids------------------------------*/
+#grilla {
+   display: grid;
+   grid-template-areas:
+     "header"
+     "nav"
+     "section"
+     "footer";
+   
+   grid-template-columns: 100% 1fr 1fr 2fr;
+   grid-row-gap: 1px;
+
+}
+
+header {
+    grid-area: header;
+    height: 20vh;
+
+
+}
+nav {
+    grid-area: nav;
+    height: 6vh;
+    width: 52%;
+    justify-self: center;
+
+}
+
+
+
+section {
+    grid-area: section;
+    height: 300vh;
+
+}
+
+footer {
+    grid-area: footer;
+    align-content: end;
+    height: 40vh;
+
+}
+
+
+/*-----------------------fin-grids------------------------------*/
+
+/*------------------------media-queries-------------------------*/
+
+
+@media only screen and (max-width: 1200px) {
+
+.tamaño {
+    width: auto;
+}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+.tamaño {
+    width: 100%;
+    height: 50%;
+}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.tamaño {
+    width: 100%;
+    height: 50%;
+}
+
+
+}
+
+/*---------------------------------------------------------------*/
+

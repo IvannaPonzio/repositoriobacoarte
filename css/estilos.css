@@ -1,0 +1,273 @@
+.propiedadesTexto, #section #somos p, #footer, #footer #FooterColumnas .footerLinks, #footer #FooterColumnas .footerTitulos {
+  font-style: normal;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.propiedadesTexto2, #section h1, #section #somos h2, #section #crono h3 {
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+header {
+  padding-top: 10vh;
+  height: 200px;
+  background-color: #d1e6cc;
+}
+
+header #logo_imagen {
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+nav {
+  height: 1.5625em;
+}
+
+nav .navMenu {
+  font-size: 81%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .subMenu {
+  text-decoration: none;
+  font-size: 15;
+}
+
+nav .sub {
+  font-size: 15;
+}
+
+nav .navMenu a {
+  color: #cbac8b;
+}
+
+nav .navMenu a :hover {
+  color: #a93e6a;
+}
+
+nav .toggle {
+  color: #5b2545;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+}
+
+#section .carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+#section h1 {
+  font-size: 25px;
+  font-family: 'Sacramento', cursive;
+  color: #a93e6a;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+#section #somos {
+  background-image: url(multimedia/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section #somos #somos_texto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+#section #somos #somos_imagen {
+  border: 8px solid #b4dcac;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+#section #somos h2 {
+  font-size: 25px;
+  font-family: 'Sacramento', cursive;
+  color: #e46474;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+
+#section #somos p {
+  font-size: 16px;
+  color: #cbac8b;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
+}
+
+#section #redes {
+  background-color: #b4dcac;
+  height: 30vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section #redes :hover {
+  -webkit-animation: 1s chicle 1;
+          animation: 1s chicle 1;
+}
+
+@-webkit-keyframes chicle {
+  30% {
+    -webkit-transform: scaleX(1.25) scaleY(0.75);
+  }
+  50% {
+    -webkit-transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    -webkit-transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+#section #crono {
+  height: 120vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#section #crono h3 {
+  color: #a93e6a;
+  font-size: 18px;
+  font-family: cursive;
+}
+
+#section #crono .listasCrono {
+  display: inline-block;
+  overflow: auto;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  border: solid 3px #a93e6a;
+  width: 400px;
+  height: 80px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+#section #crono .listasCrono .verde {
+  background-color: #b4dcac;
+  color: white;
+  font-size: 15px;
+  font-family: calabri;
+}
+
+#section #crono .listasCrono .amarillo {
+  background-color: #cbac8b;
+  color: white;
+  font-size: 15px;
+  font-family: calabri;
+}
+
+#section #crono .listasCrono .rosa {
+  background-color: #e46474;
+  color: white;
+  font-size: 15px;
+  font-family: calabri;
+}
+
+.section__titulo {
+  text-align: right;
+}
+
+#footer {
+  margin-top: 60vh;
+  height: 40vh;
+  background-color: #5b2545;
+  color: white;
+  font-size: 18px;
+}
+
+#footer #FooterColumnas .footerLinks {
+  color: white;
+  font-size: 18px;
+}
+
+#footer #FooterColumnas .footerTitulos {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+
+#footer #FooterColumnas .footerCajas {
+  color: #a93e6a;
+}
+
+#footer #FooterColumnas .footerCajas :focus {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 16px;
+}
+
+#footer #FooterColumnas .footerBoton {
+  background-color: #a93e6a;
+  -webkit-box-shadow: 1px 1px #472426;
+          box-shadow: 1px 1px #472426;
+  border: none;
+  color: white;
+  padding: 4px 55px;
+  font-size: 15px;
+  margin: 2px 1px;
+}
+
+#footer #FooterColumnas .footerBoton :hover {
+  font-weight: bold;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#404 {
+  height: 700px;
+  background-color: #d1e6cc;
+}
+
+#404 .404-Index {
+  text-decoration: none;
+}
+/*# sourceMappingURL=estilos.css.map */
